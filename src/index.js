@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
+import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
-import { store } from './createStore.js';
-import App from './components/App.jsx';
+import App from './components/index.jsx';
+import store from './createStore';
+
+ReactDom.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
 
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));

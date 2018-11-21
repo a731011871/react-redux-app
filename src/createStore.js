@@ -1,6 +1,11 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import { createLogger } from 'redux-logger';
 import reducers from './reducers';
 
-export const store = createStore(reducers);
+const store = createStore(reducers, applyMiddleware(thunkMiddleware))
 
-store.subscribe(() => { console.log('输出Store---' + store.getState()); });
+store.subscribe(() => { console.log('store更改---');console.log(store.getState()); })
+
+export default store;
+
