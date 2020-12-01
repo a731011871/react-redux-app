@@ -5,3 +5,4 @@ script:
   - yarn build
   - cd build
   - pwd
+  - ifconfig -a
