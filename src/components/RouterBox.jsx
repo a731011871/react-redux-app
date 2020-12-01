@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, NavLink, Prompt } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import RouterThird from "./RouterThird";
 import RouterOne from "./RouterOne";
 import RouterSecond from "./RouterSecond";
