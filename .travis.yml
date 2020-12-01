@@ -3,3 +3,5 @@ node_js:
   - 12
 script: 
   - yarn build
+  - yarn global add serve
+  - serve -s build
